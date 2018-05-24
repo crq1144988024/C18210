@@ -17,7 +17,7 @@ namespace C18210
 
         {//skinTextBox1.Text
          //MessageBox.Show(skinComboBox11.Text);return;
-            string file_path = "";
+            string file_path = path+"\\"+name;
             if (path == null)
             {
 
@@ -30,7 +30,7 @@ namespace C18210
 
 
 
-            string destinationFile = path;
+            string destinationFile = file_path;
             string sourceFile = System.AppDomain.CurrentDomain.BaseDirectory + "Excel\\laser模板.xlsx";
             FileInfo file = new FileInfo(sourceFile);
             if (file.Exists)
@@ -49,15 +49,15 @@ namespace C18210
 
                 {
                     int worksheet_now = 1;
-                  
-                    CreateWorksheetAbAssets(package.Workbook.Worksheets.Copy("Sheet0", kSheetNameAbAssets));
 
-                    FillWorksheetAbAssets(package.Workbook.Worksheets[worksheet_now + 1], datagridview1, check_num);
-                  
-                    package.Workbook.Worksheets.Delete("Sheet0");
+                    //   CreateWorksheetAbAssets(package.Workbook.Worksheets.Copy("Sheet0", kSheetNameAbAssets));
+
+                    //     FillWorksheetAbAssets(package.Workbook.Worksheets[worksheet_now + 1], datagridview1, check_num);
+                    FillWorksheetAbAssets(package.Workbook.Worksheets["Sheet0"], datagridview1, check_num);
+                    //package.Workbook.Worksheets.Delete("Sheet0");
                     package.Save();
 
-                    MessageBox.Show("导出成功！");
+                  //  MessageBox.Show("导出成功！");
                 }
             }
 
@@ -98,37 +98,49 @@ namespace C18210
         public void FillWorksheetAbAssets(ExcelWorksheet ws, DataGridView DataGridView_BOM_Hold, int check_num)
         {
 
-
+            if (DataGridView_BOM_Hold.Rows.Count <= 0) { return; }
 
 
             int k = 2;
             int r = 0;
             for (int i = 0; i < DataGridView_BOM_Hold.Rows.Count; i++)
             {
-                DataGridViewCheckBoxCell chkBoxCell = (DataGridViewCheckBoxCell)DataGridView_BOM_Hold.Rows[i].Cells[check_num];
-                bool temp = false;
+                //DataGridViewCheckBoxCell chkBoxCell = (DataGridViewCheckBoxCell)DataGridView_BOM_Hold.Rows[i].Cells[check_num];
+                //bool temp = false;
 
-                if (chkBoxCell != null && ((bool)chkBoxCell.EditingCellFormattedValue == true || (bool)chkBoxCell.FormattedValue == true))
+                //if (chkBoxCell != null && ((bool)chkBoxCell.EditingCellFormattedValue == true || (bool)chkBoxCell.FormattedValue == true))
+                //{
+                //    temp = true;
+                //}
+
+                //if (temp == true)
+                //{
+                Color color_temp = new Color();
+                string str_result = DataGridView_BOM_Hold.Rows[i].Cells[3].Value.ToString();
+                color_temp = Color.White;
+                if (str_result.Contains("OK"))
                 {
-                    temp = true;
+                    color_temp = System.Drawing.Color.Green;
+                }
+                else if (str_result.Contains("NG"))
+                {
+                    color_temp = System.Drawing.Color.Red;
                 }
 
-                if (temp == true)
-                {
-                    ws.Cells[k, 1].Value = r.ToString();//序号
-                    ws.Cells[k, 2].Value = DataGridView_BOM_Hold.Rows[i].Cells[2].Value;//代码
-                    ws.Cells[k, 3].Value = DataGridView_BOM_Hold.Rows[i].Cells[3].Value;///规格型号
-                    ws.Cells[k, 4].Value = DataGridView_BOM_Hold.Rows[i].Cells[4].Value;// 物料名称
-                    ws.Cells[k, 5].Value = DataGridView_BOM_Hold.Rows[i].Cells[5].Value;// 品牌
-                    ws.Cells[k, 6].Value = "个";//单位
-                    if (check_num == 14)
-                    {
 
-                        ws.Cells[k, 7].Value = DataGridView_BOM_Hold.Rows[i].Cells[12].Value;//审核日期
+             
+
+                    for (int p = 0; p < 15; p++)
+                    {
+                        ws.Cells[k, p+1].Value = DataGridView_BOM_Hold.Rows[i].Cells[p].Value;
+                        ws.Cells[k, p + 1].Style.Fill.PatternType = ExcelFillStyle.Solid;
+                        ws.Cells[k, p + 1].Style.Fill.BackgroundColor.SetColor(color_temp);
+                  
                     }
+                
                     r++;
                     k++;
-                }
+                //}
 
 
             }

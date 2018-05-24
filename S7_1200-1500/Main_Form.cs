@@ -10,18 +10,36 @@ using System.Windows.Forms;
 using Snap7;
 using System.Threading;
 using C18210.Class_Tools;
+using System.Globalization;
 
 namespace C18210
 {
     public partial class Main_Form : Form
     {
         Class1_MainForm_Tools Class1_Tool = new Class1_MainForm_Tools();
+                                                                       
+        /// <summary>
+                                                                        /// 保存使能
+                                                                        /// </summary>
+
         public static bool datagridview_add_enable;
+        /// <summary>
+                                                   /// excel导出的文件夹路径
+                                                   /// </summary>
+        public static string excel_output_path;
+        /// <summary>
+                                               /// 当前日期
+                                               /// </summary>
+        public static string Now_datetime_str;
 
-
-
+        public static DateTime Now_datetime_time;
+        /// <summary>
+        /// 表格中已有产品数量
+        /// </summary>
+        public static int numerical_order;
+        
         Global Class_Global = new Global();
-
+        Class3_Excel_output Excel_output = new Class3_Excel_output();
 
         static  int connect_Result = 1;
         public delegate void myinvoke(string str);
@@ -54,6 +72,8 @@ namespace C18210
         public static string str_product_bar_code_string;
         public static string str_product_result;
 
+
+
         static int comma_int = 0;//焊接数据逗号个数
         static string comma_str = "";
 
@@ -64,7 +84,7 @@ namespace C18210
 
         private void Main_Form_Load(object sender, EventArgs e)
         {
-          
+           
             Class1_Tool.function_initialize();
             function_initialize();
                t0_s1 = false;
@@ -85,6 +105,12 @@ namespace C18210
             ToolStripMenuItem1.Enabled = false;
             ToolStripMenuItem2.Enabled = false;
             ToolStripMenuItem3.Enabled = false;
+            get_NOW_time();
+            Class1_Tool.function_datagridview_refresh(DataGridView1, true);
+            if ( DataGridView1 .Rows.Count <= 0) { Main_Form.numerical_order = 1; } else
+            {
+                Main_Form.numerical_order = DataGridView1.Rows.Count+1;
+            }
             return temp;
         }
         /// <summary>
@@ -266,8 +292,12 @@ namespace C18210
         {
             ToolStripStatusLabel9.Text = str;
            
-           Class1_Tool.function_datagridview_add(DataGridView1, datagridview_add_enable);
+           Class1_Tool.function_datagridview_refresh(DataGridView1, datagridview_add_enable);
             Class1_Tool.function_database_add(datagridview_add_enable);
+          
+
+
+
 
         }
         private void Read1200()
@@ -347,7 +377,15 @@ namespace C18210
 
         private void Main_Form_FormClosed(object sender, FormClosedEventArgs e)
         {
+            try
+            {
+
             thread1200.Abort();
+            }
+            catch
+            {
+
+            }
         }
 
         private void ToolStripButton3_Click(object sender, EventArgs e)
@@ -380,10 +418,17 @@ namespace C18210
             int i = 0;
             INT_11_OVER = false;
             str_all = str.Length.ToString() + " =====" + (str.Length / 2).ToString();
+
+            //输入多少输出就多少
+            int_all_Byte_I[87] = Convert.ToUInt16(str.Substring(88, 4), 16);//OK count
+            int_all_Byte_I[88] = Convert.ToUInt16(str.Substring(92, 4), 16);//NG count
+            int_all_Byte_I[89] = Convert.ToUInt16(str.Substring(96, 4), 16);//Total count
+
             for (int k = 0; k < str.Length / 2; k++)
             {
-                if (k >= 0 && k <= 99)
+                if (k >= 0 && k <= 87)
                 {
+
                     //输入多少输出就多少
                     byte[] byteArray = System.Text.Encoding.Default.GetBytes(str.Substring(i, 2));
                    String STR12 = System.Text.Encoding.ASCII.GetString(byteArray); //GetString(buf);
@@ -392,8 +437,14 @@ namespace C18210
                     str_all_Byte_I = str_all_Byte_I + str_10.ToString();
 
                     int_all_Byte_I[k] = str_10;
+
+                  
                 }
-               
+                if (k >= 88 && k <= 99)
+                {
+
+                   
+                }
                 if (k >=100&& k <= 293)
                 {
                     //输入多少输出ASCII码
@@ -479,7 +530,17 @@ namespace C18210
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-             Class1_Tool .function_CreateDirectory();
+            Button_OK.Text= int_all_Byte_I[87].ToString() ;//OK count
+            Button_NG.Text= int_all_Byte_I[88].ToString();//NG count
+            Button_Total.Text= int_all_Byte_I[89].ToString();//Total count
+
+            Button_Result.Text = str_product_result;
+            TextBox_product_name.Text = str_productname_string;
+            TextBox_product_code.Text = str_product_bar_code_string;
+
+            
+
+            get_NOW_time();
             ToolStripStatusLabel4.Text = DateTime.Now.ToLocalTime().ToString();
             if (SQL.Class_ID.login_Is_OK)
             {
@@ -505,6 +566,40 @@ namespace C18210
                 ToolStripStatusLabel2.Text = "";
                   ToolStripMenuItem4.Text = "登陆系统";
             }
+        }
+        /// <summary>
+        /// 获取当前时间
+        /// </summary>
+        public void get_NOW_time()
+        {
+            string yy;
+            string mm;
+            string dd;
+
+
+            yy = DateTime.Now.Year.ToString() + "年";
+            mm = DateTime.Now.Month.ToString() + "月";
+            dd = DateTime.Now.Day.ToString() + "日";
+
+            Now_datetime_str = yy + "-" + mm + "-" + dd;
+
+            DateTime dt = new DateTime();
+
+            DateTimeFormatInfo dtFormat = new DateTimeFormatInfo();
+
+            dtFormat.ShortDatePattern = "yyyy/MM/dd";
+            //dt = Convert.ToDateTime("2018/06/12", dtFormat);
+            try
+            {
+                dt = Convert.ToDateTime(DateTime.Now.ToShortDateString().ToString(), dtFormat);
+                //dt = Convert.ToDateTime("18/06/6", dtFormat);
+            }
+            catch
+            {
+
+            }
+
+            Now_datetime_time = dt;
         }
         public void Read_byte_bool_Mapping()
         {

@@ -94,6 +94,18 @@ namespace C18210
 
 
                 DataGridViewRow row = new DataGridViewRow();
+
+                if (li[3].Contains("OK"))
+                {
+                    row.DefaultCellStyle.BackColor = System.Drawing.Color.Green;
+                }
+                else if (li[3].Contains("NG"))
+                {
+                    row.DefaultCellStyle.BackColor = System.Drawing.Color.Red;
+                }
+
+
+
                 datagridview_1.Rows.Add(row);
                 for (int i = 0; i < 15; i++)
                 {
