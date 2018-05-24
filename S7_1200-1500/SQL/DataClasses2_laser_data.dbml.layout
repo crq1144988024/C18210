@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses2_laser_data">
+  <DataContextMoniker Name="/DataClasses2_laser_dataDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2c771098-767f-40a7-95c9-4896c6b85e70" absoluteBounds="4.25, 2.375, 2, 3.8637821451822916">
+      <DataClassMoniker Name="/DataClasses2_laser_dataDataContext/Table_data_laser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b1b2214-47e2-4e60-9374-832028ad168a" absoluteBounds="4.265, 2.835, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

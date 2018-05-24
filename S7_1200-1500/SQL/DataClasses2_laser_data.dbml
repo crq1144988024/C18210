@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="C18210" Class="DataClasses2_laser_dataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CRQ-PC\WINCC;Initial Catalog=C18210;Integrated Security=True" SettingsObjectName="C18210.Properties.Settings" SettingsPropertyName="C18210ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Table_data_laser" Member="Table_data_laser">
+    <Type Name="Table_data_laser">
+      <Column Name="编号" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="产品型号" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="工件条码" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="结果" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="循环次数" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="时间" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="日期" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="焊接时间" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="绝对深度总值" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="焊接相对深度" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="相对深度总值" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="触发压力" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="焊接压力" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="spare1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="spare2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="速度" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

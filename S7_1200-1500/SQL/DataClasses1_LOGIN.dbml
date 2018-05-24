@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="C18210" Class="DataClasses1_LOGINDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CRQ-PC\WINCC;Initial Catalog=C18210;Integrated Security=True" SettingsObjectName="C18210.Properties.Settings" SettingsPropertyName="C18210ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Table_login" Member="Table_login">
+    <Type Name="Table_login">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NChar(200)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="NChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
