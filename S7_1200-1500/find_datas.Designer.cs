@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.endtime = new System.Windows.Forms.DateTimePicker();
@@ -57,14 +57,16 @@
             this.Label8 = new System.Windows.Forms.Label();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -88,9 +90,11 @@
             this.Label6 = new System.Windows.Forms.Label();
             this.Label12 = new System.Windows.Forms.Label();
             this.Label13 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.DataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -148,7 +152,7 @@
             this.endtime.Name = "endtime";
             this.endtime.Size = new System.Drawing.Size(120, 21);
             this.endtime.TabIndex = 17;
-            this.endtime.Value = new System.DateTime(2015, 9, 7, 0, 0, 0, 0);
+            this.endtime.Value = new System.DateTime(2018, 6, 7, 0, 0, 0, 0);
             // 
             // statime
             // 
@@ -158,7 +162,7 @@
             this.statime.Name = "statime";
             this.statime.Size = new System.Drawing.Size(120, 21);
             this.statime.TabIndex = 16;
-            this.statime.Value = new System.DateTime(2015, 9, 7, 0, 0, 0, 0);
+            this.statime.Value = new System.DateTime(2018, 6, 1, 0, 0, 0, 0);
             // 
             // ngsel
             // 
@@ -169,6 +173,7 @@
             this.ngsel.TabIndex = 15;
             this.ngsel.Text = "不合格品查询";
             this.ngsel.UseVisualStyleBackColor = true;
+            this.ngsel.Click += new System.EventHandler(this.ngsel_Click);
             // 
             // oksel
             // 
@@ -179,6 +184,7 @@
             this.oksel.TabIndex = 14;
             this.oksel.Text = "合格品查询";
             this.oksel.UseVisualStyleBackColor = true;
+            this.oksel.Click += new System.EventHandler(this.oksel_Click);
             // 
             // Label10
             // 
@@ -220,6 +226,7 @@
             this.btnQuery.Size = new System.Drawing.Size(54, 49);
             this.btnQuery.TabIndex = 13;
             this.btnQuery.UseVisualStyleBackColor = false;
+            this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
             // 
             // gjz
             // 
@@ -240,14 +247,16 @@
             // GroupBox1
             // 
             this.GroupBox1.Controls.Add(this.textBox5);
+            this.GroupBox1.Controls.Add(this.textBox9);
             this.GroupBox1.Controls.Add(this.textBox6);
             this.GroupBox1.Controls.Add(this.textBox8);
             this.GroupBox1.Controls.Add(this.textBox7);
             this.GroupBox1.Controls.Add(this.label25);
             this.GroupBox1.Controls.Add(this.label21);
+            this.GroupBox1.Controls.Add(this.label23);
             this.GroupBox1.Controls.Add(this.label15);
             this.GroupBox1.Controls.Add(this.label16);
-            this.GroupBox1.Controls.Add(this.label17);
+            this.GroupBox1.Controls.Add(this.label22);
             this.GroupBox1.Controls.Add(this.label18);
             this.GroupBox1.Controls.Add(this.label20);
             this.GroupBox1.Controls.Add(this.label19);
@@ -271,6 +280,7 @@
             this.GroupBox1.Controls.Add(this.Label6);
             this.GroupBox1.Controls.Add(this.Label12);
             this.GroupBox1.Controls.Add(this.Label13);
+            this.GroupBox1.Controls.Add(this.label17);
             this.GroupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.GroupBox1.Location = new System.Drawing.Point(0, 636);
             this.GroupBox1.Name = "GroupBox1";
@@ -281,15 +291,23 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(904, 98);
+            this.textBox5.Location = new System.Drawing.Point(1130, 67);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(135, 21);
+            this.textBox5.Size = new System.Drawing.Size(100, 21);
             this.textBox5.TabIndex = 146;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(904, 104);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
+            this.textBox9.Size = new System.Drawing.Size(135, 21);
+            this.textBox9.TabIndex = 147;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(904, 64);
+            this.textBox6.Location = new System.Drawing.Point(904, 70);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(135, 21);
@@ -297,10 +315,10 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(1117, 23);
+            this.textBox8.Location = new System.Drawing.Point(1130, 23);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(83, 21);
+            this.textBox8.Size = new System.Drawing.Size(100, 21);
             this.textBox8.TabIndex = 148;
             // 
             // textBox7
@@ -314,7 +332,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(1206, 26);
+            this.label25.Location = new System.Drawing.Point(1235, 23);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(29, 12);
             this.label25.TabIndex = 141;
@@ -329,41 +347,50 @@
             this.label21.TabIndex = 141;
             this.label21.Text = "mm";
             // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(1042, 110);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(11, 12);
+            this.label23.TabIndex = 141;
+            this.label23.Text = "N";
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(1042, 67);
+            this.label15.Location = new System.Drawing.Point(1042, 76);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(11, 12);
+            this.label15.Size = new System.Drawing.Size(17, 12);
             this.label15.TabIndex = 141;
-            this.label15.Text = "N";
+            this.label15.Text = "mm";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(1042, 101);
+            this.label16.Location = new System.Drawing.Point(1241, 67);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(11, 12);
             this.label16.TabIndex = 142;
             this.label16.Text = "N";
             // 
-            // label17
+            // label22
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(813, 107);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(59, 12);
-            this.label17.TabIndex = 143;
-            this.label17.Text = "焊接压力:";
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(813, 107);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(65, 12);
+            this.label22.TabIndex = 144;
+            this.label22.Text = "触发压力：";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(813, 67);
+            this.label18.Location = new System.Drawing.Point(813, 73);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(65, 12);
+            this.label18.Size = new System.Drawing.Size(89, 12);
             this.label18.TabIndex = 144;
-            this.label18.Text = "触发压力：";
+            this.label18.Text = "相对深度总值：";
             // 
             // label20
             // 
@@ -402,7 +429,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(639, 101);
+            this.textBox3.Location = new System.Drawing.Point(636, 104);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(135, 21);
@@ -554,6 +581,15 @@
             this.Label13.TabIndex = 128;
             this.Label13.Text = "产品编号：";
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(1065, 73);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(59, 12);
+            this.label17.TabIndex = 143;
+            this.label17.Text = "焊接压力:";
+            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.DataGridView1);
@@ -571,6 +607,7 @@
             this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
+            this.Column16,
             this.Column15,
             this.Column4,
             this.Column3,
@@ -593,21 +630,30 @@
             this.DataGridView1.RowTemplate.Height = 23;
             this.DataGridView1.Size = new System.Drawing.Size(1258, 491);
             this.DataGridView1.TabIndex = 25;
+            this.DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellClick);
+            this.DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // Column1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle46;
             this.Column1.FillWeight = 69.32018F;
             this.Column1.HeaderText = "编号";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.Width = 56;
             // 
+            // Column16
+            // 
+            this.Column16.HeaderText = "产品型号";
+            this.Column16.Name = "Column16";
+            this.Column16.ReadOnly = true;
+            this.Column16.Width = 80;
+            // 
             // Column15
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column15.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column15.DefaultCellStyle = dataGridViewCellStyle47;
             this.Column15.FillWeight = 69.32018F;
             this.Column15.HeaderText = "工件条码";
             this.Column15.Name = "Column15";
@@ -616,8 +662,8 @@
             // 
             // Column4
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle48;
             this.Column4.FillWeight = 69.32018F;
             this.Column4.HeaderText = "结果";
             this.Column4.Name = "Column4";
@@ -626,8 +672,8 @@
             // 
             // Column3
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle49;
             this.Column3.FillWeight = 69.32018F;
             this.Column3.HeaderText = "循环次数";
             this.Column3.Name = "Column3";
@@ -636,8 +682,8 @@
             // 
             // Column2
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle50;
             this.Column2.FillWeight = 69.32018F;
             this.Column2.HeaderText = "时间";
             this.Column2.Name = "Column2";
@@ -646,8 +692,8 @@
             // 
             // Column5
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle51;
             this.Column5.FillWeight = 69.32018F;
             this.Column5.HeaderText = "日期";
             this.Column5.Name = "Column5";
@@ -656,8 +702,8 @@
             // 
             // Column6
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle52;
             this.Column6.FillWeight = 69.32018F;
             this.Column6.HeaderText = "焊接时间(s)";
             this.Column6.Name = "Column6";
@@ -666,38 +712,38 @@
             // 
             // Column7
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle53;
             this.Column7.FillWeight = 69.32018F;
             this.Column7.HeaderText = "绝对深度总值(mm)";
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
-            this.Column7.Width = 135;
+            this.Column7.Width = 120;
             // 
             // Column8
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle54;
             this.Column8.FillWeight = 69.32018F;
             this.Column8.HeaderText = "焊接相对深度(mm)";
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
-            this.Column8.Width = 135;
+            this.Column8.Width = 120;
             // 
             // Column9
             // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column9.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column9.DefaultCellStyle = dataGridViewCellStyle55;
             this.Column9.FillWeight = 69.32018F;
             this.Column9.HeaderText = "相对深度总值(mm)";
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
-            this.Column9.Width = 135;
+            this.Column9.Width = 120;
             // 
             // Column10
             // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column10.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column10.DefaultCellStyle = dataGridViewCellStyle56;
             this.Column10.FillWeight = 69.32018F;
             this.Column10.HeaderText = "触发压力(N)";
             this.Column10.Name = "Column10";
@@ -706,17 +752,18 @@
             // 
             // Column11
             // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column11.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column11.DefaultCellStyle = dataGridViewCellStyle57;
             this.Column11.FillWeight = 69.32018F;
             this.Column11.HeaderText = "焊接压力(N)";
             this.Column11.Name = "Column11";
             this.Column11.ReadOnly = true;
+            this.Column11.Width = 80;
             // 
             // Column12
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column12.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column12.DefaultCellStyle = dataGridViewCellStyle58;
             this.Column12.FillWeight = 532.9949F;
             this.Column12.HeaderText = "<future>";
             this.Column12.Name = "Column12";
@@ -725,18 +772,18 @@
             // 
             // Column13
             // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column13.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column13.DefaultCellStyle = dataGridViewCellStyle59;
             this.Column13.FillWeight = 65.8427F;
             this.Column13.HeaderText = "<future>";
             this.Column13.Name = "Column13";
             this.Column13.ReadOnly = true;
-            this.Column13.Width = 53;
+            this.Column13.Width = 35;
             // 
             // Column14
             // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column14.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column14.DefaultCellStyle = dataGridViewCellStyle60;
             this.Column14.FillWeight = 69.32018F;
             this.Column14.HeaderText = "速度(mm/s)";
             this.Column14.Name = "Column14";
@@ -818,6 +865,7 @@
         private System.Windows.Forms.GroupBox groupBox5;
         internal System.Windows.Forms.DataGridView DataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -832,5 +880,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        internal System.Windows.Forms.TextBox textBox9;
+        internal System.Windows.Forms.Label label23;
+        internal System.Windows.Forms.Label label22;
     }
 }

@@ -34,7 +34,7 @@ namespace C18210.Class_Tools
                     row_now = datagridview1.Rows.Count - 1;
                 }
 
-                int data_i = 11;//Main_Form.str_list_part_ASCII.Count;
+                int data_i = Main_Form.str_list_part_ASCII.Count;
                 if (data_i <= 0) { return temp; }
                 for (int i = 0; i < data_i; i++)
                 {
@@ -96,20 +96,20 @@ namespace C18210.Class_Tools
                 var newCustomer = new Table_data_laser
                 {
                     产品型号 = Main_Form.str_productname_string,
-                     工件条码=Main_Form.str_product_bar_code_string,
-                      结果= Main_Form.str_product_result,
-                    循环次数 =   Main_Form.str_list_part_ASCII[0].ToString(),
-                      时间 = Main_Form.str_list_part_ASCII[1].ToString(),
-                     日期 = Main_Form.str_list_part_ASCII[2].ToString(),
-                     焊接时间 = Main_Form.str_list_part_ASCII[3].ToString(),
-                     绝对深度总值 = Main_Form.str_list_part_ASCII[4].ToString(),
-                     焊接相对深度 = Main_Form.str_list_part_ASCII[5].ToString(),
-                     相对深度总值 = Main_Form.str_list_part_ASCII[6].ToString(),
-                     触发压力 = Main_Form.str_list_part_ASCII[7].ToString(),
-                     焊接压力 = Main_Form.str_list_part_ASCII[8].ToString(),
-                      spare1 = Main_Form.str_list_part_ASCII[9].ToString(),
-                      spare2 = Main_Form.str_list_part_ASCII[10].ToString(),
-                       速度= Main_Form.str_list_part_ASCII[11].ToString(),
+                    工件条码=Main_Form.str_product_bar_code_string,
+                     结果= Main_Form.str_product_result,
+                    循环次数 = Main_Form.str_list_part_ASCII[0].ToString(),
+                    时间 = Main_Form.str_list_part_ASCII[1].ToString(),
+                    日期 = Main_Form.str_list_part_ASCII[2].ToString(),
+                    焊接时间 = Main_Form.str_list_part_ASCII[3].ToString(),
+                    绝对深度总值 = Main_Form.str_list_part_ASCII[4].ToString(),
+                    焊接相对深度 = Main_Form.str_list_part_ASCII[5].ToString(),
+                    相对深度总值 = Main_Form.str_list_part_ASCII[6].ToString(),
+                    触发压力 = Main_Form.str_list_part_ASCII[7].ToString(),
+                    焊接压力 = Main_Form.str_list_part_ASCII[8].ToString(),
+                    spare1 = Main_Form.str_list_part_ASCII[9].ToString(),
+                    spare2 = Main_Form.str_list_part_ASCII[10].ToString(),
+                    速度 = Main_Form.str_list_part_ASCII[11].ToString(),
                 };
                 Class_laser_data.Table_data_laser.InsertOnSubmit(newCustomer);
                 Class_laser_data.SubmitChanges();

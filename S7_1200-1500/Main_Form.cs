@@ -266,7 +266,7 @@ namespace C18210
         {
             ToolStripStatusLabel9.Text = str;
            
-            Class1_Tool.function_datagridview_add(DataGridView1, datagridview_add_enable);
+           Class1_Tool.function_datagridview_add(DataGridView1, datagridview_add_enable);
             Class1_Tool.function_database_add(datagridview_add_enable);
 
         }
@@ -355,8 +355,9 @@ namespace C18210
             Condition_monitoring form = new Condition_monitoring();
             form.Show();
         }
-     
 
+        bool INT_11_OVER = false;
+        public static string str_product_bar_code_TEMP;
         /// <summary>
         /// 显示函数
         /// </summary>
@@ -367,16 +368,17 @@ namespace C18210
             str_all_ASCII = "";
             str_all_Char = "";
             str_all_Byte_I = "";
-          // str_productname_string = "";
-           // str_product_bar_code_string = "";
+           str_productname_string = "";
+          str_product_bar_code_string = "";
             str_list_part_ASCII.Clear();
             str_list_part_Char = "";
             str_all = "";
             str_all = str;
             comma_str = "";
             comma_int = 0;
+            str_product_bar_code_TEMP = "";
             int i = 0;
-
+            INT_11_OVER = false;
             str_all = str.Length.ToString() + " =====" + (str.Length / 2).ToString();
             for (int k = 0; k < str.Length / 2; k++)
             {
@@ -406,10 +408,12 @@ namespace C18210
 
 
                     
-                    if (comma_int == 11&& int1 == 32) { str_list_part_ASCII.Add(comma_str); comma_str = ""; }//  第11个逗号之后 有空格问题
-                    
-                    if (int1 == 44) { str_list_part_ASCII.Add(comma_str); comma_str = ""; comma_int++; }//s
-                    if (int1 != 44) { comma_str = comma_str + ascii; }
+                    if (comma_int == 11&& int1 == 32) { str_list_part_ASCII.Add(comma_str); comma_str = ""; comma_int = 100; }//  第11个逗号之后 有空格问题
+                  
+                        if (int1 == 44) { str_list_part_ASCII.Add(comma_str); comma_str = ""; comma_int++; }//s
+                        if (int1 != 44) { comma_str = comma_str + ascii; }
+                 
+                  
                         
 
                 }
@@ -420,27 +424,43 @@ namespace C18210
                     int value = Convert.ToInt32(str.Substring(i, 2), 16);
                     string stringValue = Char.ConvertFromUtf32(value);
                     char charValue = (char)value;
-                    str_product_bar_code_string = str_product_bar_code_string + stringValue;
+                    str_product_bar_code_TEMP = str_product_bar_code_TEMP + stringValue;
                 }
 
 
-                if (k >= 900 && k <= 951)
+                if (k >= 903 && k <= 951)
                 {
                     //char 类型
                     int value = Convert.ToInt32(str.Substring(i, 2), 16);
                     string stringValue = Char.ConvertFromUtf32(value);
                     char charValue = (char)value;
-                    str_productname_string = str_productname_string + stringValue;
+                    str_all_Char = str_all_Char + stringValue;
                 }
 
                 i = i + 2;
               
 
             }
-            //str_product_bar_code_string = str_product_bar_code_string;//工件条码
-                                                                             
-           // str_productname_string = str_all_Char;//产品型号
-           
+            
+            try
+            {
+                str_product_bar_code_string = str_product_bar_code_TEMP.Replace('\0', ' ').Trim();//工件条码
+
+             
+
+            }
+            catch
+            {
+                str_product_bar_code_string = " ";
+            }
+            try
+            {
+                str_productname_string = str_all_Char.Replace('\0', ' ').Trim();//产品型号
+            }
+            catch
+            {
+                str_productname_string = " ";
+            }
             //}
 
             Thread.SpinWait(10);
