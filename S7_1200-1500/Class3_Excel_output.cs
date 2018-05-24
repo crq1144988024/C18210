@@ -130,7 +130,7 @@ namespace C18210
 
              
 
-                    for (int p = 0; p < 15; p++)
+                    for (int p = 0; p < 16; p++)
                     {
                         ws.Cells[k, p+1].Value = DataGridView_BOM_Hold.Rows[i].Cells[p].Value;
                         ws.Cells[k, p + 1].Style.Fill.PatternType = ExcelFillStyle.Solid;

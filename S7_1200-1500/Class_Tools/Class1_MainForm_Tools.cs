@@ -96,7 +96,7 @@ namespace C18210.Class_Tools
                     
                     if (dt.CompareTo(Main_Form.Now_datetime_time) == 0)
                     {
-                        MessageBox.Show(Main_Form.Now_datetime_time.ToString());
+                       // MessageBox.Show(Main_Form.Now_datetime_time.ToString());
                             if (strs[3] != null)
                             {
                                list0_find_all.Add(strs);
@@ -123,11 +123,11 @@ namespace C18210.Class_Tools
                         }
                        
                         datagridview1.Rows.Add(row);
-                        for (int i = 0; i < 15; i++)
+                        for (int i = 0; i < 16; i++)
                         {
                             if (i == 0)
                             {
-                                datagridview1.Rows[n].Cells[i].Value = n.ToString();
+                                datagridview1.Rows[n].Cells[i].Value = (n+1).ToString();
                             }
                             else
                             {

@@ -581,7 +581,7 @@ namespace C18210
             mm = DateTime.Now.Month.ToString() + "月";
             dd = DateTime.Now.Day.ToString() + "日";
 
-            Now_datetime_str = yy + "-" + mm + "-" + dd;
+            Now_datetime_str = yy + "" + mm + "" + dd;
 
             DateTime dt = new DateTime();
 
@@ -591,8 +591,8 @@ namespace C18210
             //dt = Convert.ToDateTime("2018/06/12", dtFormat);
             try
             {
-                dt = Convert.ToDateTime(DateTime.Now.ToShortDateString().ToString(), dtFormat);
-                //dt = Convert.ToDateTime("18/06/6", dtFormat);
+               dt = Convert.ToDateTime(DateTime.Now.ToShortDateString().ToString(), dtFormat);
+               // dt = Convert.ToDateTime("18/06/6", dtFormat);
             }
             catch
             {
