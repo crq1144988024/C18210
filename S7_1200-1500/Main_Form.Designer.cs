@@ -30,21 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Form));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle91 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle92 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle93 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle94 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle95 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle96 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle97 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle98 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle99 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle100 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle101 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle102 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle103 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle104 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle105 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ToolStrip1 = new System.Windows.Forms.ToolStrip();
             this.ToolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,24 +68,6 @@
             this.ToolStripStatusLabel11 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.DataGridView1 = new System.Windows.Forms.DataGridView();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Label8 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.Label1 = new System.Windows.Forms.Label();
-            this.TextBox2 = new System.Windows.Forms.TextBox();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
-            this.Label17 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.Button1 = new System.Windows.Forms.Button();
-            this.Button4 = new System.Windows.Forms.Button();
-            this.Label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -101,13 +83,31 @@
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Label8 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Label5 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.Label3 = new System.Windows.Forms.Label();
+            this.Button1 = new System.Windows.Forms.Button();
+            this.Button4 = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.TextBox2 = new System.Windows.Forms.TextBox();
+            this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.Label17 = new System.Windows.Forms.Label();
+            this.Label1 = new System.Windows.Forms.Label();
             this.ToolStrip1.SuspendLayout();
             this.StatusStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // ToolStrip1
@@ -326,6 +326,155 @@
             this.DataGridView1.Size = new System.Drawing.Size(1258, 697);
             this.DataGridView1.TabIndex = 24;
             // 
+            // Column1
+            // 
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle16;
+            this.Column1.FillWeight = 69.32018F;
+            this.Column1.HeaderText = "编号";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 56;
+            // 
+            // Column15
+            // 
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column15.DefaultCellStyle = dataGridViewCellStyle17;
+            this.Column15.FillWeight = 69.32018F;
+            this.Column15.HeaderText = "工件条码";
+            this.Column15.Name = "Column15";
+            this.Column15.ReadOnly = true;
+            this.Column15.Width = 56;
+            // 
+            // Column4
+            // 
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle18;
+            this.Column4.FillWeight = 69.32018F;
+            this.Column4.HeaderText = "结果";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 56;
+            // 
+            // Column3
+            // 
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle19;
+            this.Column3.FillWeight = 69.32018F;
+            this.Column3.HeaderText = "循环次数";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 57;
+            // 
+            // Column2
+            // 
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle20;
+            this.Column2.FillWeight = 69.32018F;
+            this.Column2.HeaderText = "时间";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 56;
+            // 
+            // Column5
+            // 
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle21;
+            this.Column5.FillWeight = 69.32018F;
+            this.Column5.HeaderText = "日期";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 56;
+            // 
+            // Column6
+            // 
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle22;
+            this.Column6.FillWeight = 69.32018F;
+            this.Column6.HeaderText = "焊接时间(s)";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 95;
+            // 
+            // Column7
+            // 
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle23;
+            this.Column7.FillWeight = 69.32018F;
+            this.Column7.HeaderText = "绝对深度总值(mm)";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 135;
+            // 
+            // Column8
+            // 
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle24;
+            this.Column8.FillWeight = 69.32018F;
+            this.Column8.HeaderText = "焊接相对深度(mm)";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 135;
+            // 
+            // Column9
+            // 
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column9.DefaultCellStyle = dataGridViewCellStyle25;
+            this.Column9.FillWeight = 69.32018F;
+            this.Column9.HeaderText = "相对深度总值(mm)";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Width = 135;
+            // 
+            // Column10
+            // 
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column10.DefaultCellStyle = dataGridViewCellStyle26;
+            this.Column10.FillWeight = 69.32018F;
+            this.Column10.HeaderText = "触发压力(N)";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Width = 95;
+            // 
+            // Column11
+            // 
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column11.DefaultCellStyle = dataGridViewCellStyle27;
+            this.Column11.FillWeight = 69.32018F;
+            this.Column11.HeaderText = "焊接压力(N)";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            // 
+            // Column12
+            // 
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column12.DefaultCellStyle = dataGridViewCellStyle28;
+            this.Column12.FillWeight = 532.9949F;
+            this.Column12.HeaderText = "<future>";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            this.Column12.Width = 50;
+            // 
+            // Column13
+            // 
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column13.DefaultCellStyle = dataGridViewCellStyle29;
+            this.Column13.FillWeight = 65.8427F;
+            this.Column13.HeaderText = "<future>";
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            this.Column13.Width = 53;
+            // 
+            // Column14
+            // 
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column14.DefaultCellStyle = dataGridViewCellStyle30;
+            this.Column14.FillWeight = 69.32018F;
+            this.Column14.HeaderText = "速度(mm/s)";
+            this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
+            this.Column14.Width = 80;
+            // 
             // timer1
             // 
             this.timer1.Enabled = true;
@@ -357,6 +506,150 @@
             this.groupBox4.TabIndex = 42;
             this.groupBox4.TabStop = false;
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.label7);
+            this.groupBox6.Controls.Add(this.label6);
+            this.groupBox6.Controls.Add(this.Label5);
+            this.groupBox6.Controls.Add(this.label2);
+            this.groupBox6.Controls.Add(this.button3);
+            this.groupBox6.Controls.Add(this.button2);
+            this.groupBox6.Controls.Add(this.Label3);
+            this.groupBox6.Controls.Add(this.Button1);
+            this.groupBox6.Controls.Add(this.Label8);
+            this.groupBox6.Controls.Add(this.Button4);
+            this.groupBox6.Location = new System.Drawing.Point(655, 10);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(597, 176);
+            this.groupBox6.TabIndex = 43;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "当前产品状态";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Blue;
+            this.label7.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(287, 120);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(42, 19);
+            this.label7.TabIndex = 47;
+            this.label7.Text = "pic";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Blue;
+            this.label6.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(287, 75);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 19);
+            this.label6.TabIndex = 46;
+            this.label6.Text = "pic";
+            // 
+            // Label5
+            // 
+            this.Label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Label5.AutoSize = true;
+            this.Label5.BackColor = System.Drawing.Color.Blue;
+            this.Label5.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Label5.ForeColor = System.Drawing.Color.White;
+            this.Label5.Location = new System.Drawing.Point(124, 121);
+            this.Label5.Name = "Label5";
+            this.Label5.Size = new System.Drawing.Size(71, 19);
+            this.Label5.TabIndex = 45;
+            this.Label5.Text = "总  数";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Blue;
+            this.label2.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(124, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 19);
+            this.label2.TabIndex = 44;
+            this.label2.Text = "不合格";
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.Color.Blue;
+            this.button3.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(92, 113);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(295, 37);
+            this.button3.TabIndex = 43;
+            this.button3.Text = "0";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackColor = System.Drawing.Color.Blue;
+            this.button2.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(92, 69);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(295, 37);
+            this.button2.TabIndex = 42;
+            this.button2.Text = "0";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // Label3
+            // 
+            this.Label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Label3.AutoSize = true;
+            this.Label3.BackColor = System.Drawing.Color.Blue;
+            this.Label3.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Label3.ForeColor = System.Drawing.Color.White;
+            this.Label3.Location = new System.Drawing.Point(124, 27);
+            this.Label3.Name = "Label3";
+            this.Label3.Size = new System.Drawing.Size(71, 19);
+            this.Label3.TabIndex = 41;
+            this.Label3.Text = "合  格";
+            // 
+            // Button1
+            // 
+            this.Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Button1.BackColor = System.Drawing.Color.Yellow;
+            this.Button1.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Button1.Location = new System.Drawing.Point(416, 20);
+            this.Button1.Name = "Button1";
+            this.Button1.Size = new System.Drawing.Size(158, 130);
+            this.Button1.TabIndex = 24;
+            this.Button1.Text = "RESULT";
+            this.Button1.UseVisualStyleBackColor = false;
+            // 
+            // Button4
+            // 
+            this.Button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Button4.BackColor = System.Drawing.Color.Blue;
+            this.Button4.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Button4.ForeColor = System.Drawing.Color.White;
+            this.Button4.Location = new System.Drawing.Point(92, 20);
+            this.Button4.Name = "Button4";
+            this.Button4.Size = new System.Drawing.Size(295, 37);
+            this.Button4.TabIndex = 35;
+            this.Button4.Text = "0";
+            this.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Button4.UseVisualStyleBackColor = false;
+            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.TextBox2);
@@ -370,18 +663,6 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "产品信息";
             this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
-            // 
-            // Label1
-            // 
-            this.Label1.AutoSize = true;
-            this.Label1.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label1.ForeColor = System.Drawing.Color.Black;
-            this.Label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label1.Location = new System.Drawing.Point(24, 37);
-            this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(109, 20);
-            this.Label1.TabIndex = 0;
-            this.Label1.Text = "产品型号：";
             // 
             // TextBox2
             // 
@@ -413,298 +694,17 @@
             this.Label17.TabIndex = 1;
             this.Label17.Text = "产品条码：";
             // 
-            // groupBox6
+            // Label1
             // 
-            this.groupBox6.Controls.Add(this.label7);
-            this.groupBox6.Controls.Add(this.label6);
-            this.groupBox6.Controls.Add(this.Label5);
-            this.groupBox6.Controls.Add(this.label2);
-            this.groupBox6.Controls.Add(this.button3);
-            this.groupBox6.Controls.Add(this.button2);
-            this.groupBox6.Controls.Add(this.Label3);
-            this.groupBox6.Controls.Add(this.Button1);
-            this.groupBox6.Controls.Add(this.Label8);
-            this.groupBox6.Controls.Add(this.Button4);
-            this.groupBox6.Location = new System.Drawing.Point(655, 10);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(597, 176);
-            this.groupBox6.TabIndex = 43;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "当前产品状态";
-            // 
-            // Button1
-            // 
-            this.Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Button1.BackColor = System.Drawing.Color.Yellow;
-            this.Button1.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button1.Location = new System.Drawing.Point(416, 20);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(158, 130);
-            this.Button1.TabIndex = 24;
-            this.Button1.Text = "RESULT";
-            this.Button1.UseVisualStyleBackColor = false;
-            // 
-            // Button4
-            // 
-            this.Button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Button4.BackColor = System.Drawing.Color.Blue;
-            this.Button4.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button4.ForeColor = System.Drawing.Color.White;
-            this.Button4.Location = new System.Drawing.Point(92, 20);
-            this.Button4.Name = "Button4";
-            this.Button4.Size = new System.Drawing.Size(295, 37);
-            this.Button4.TabIndex = 35;
-            this.Button4.Text = "0";
-            this.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Button4.UseVisualStyleBackColor = false;
-            // 
-            // Label3
-            // 
-            this.Label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label3.AutoSize = true;
-            this.Label3.BackColor = System.Drawing.Color.Blue;
-            this.Label3.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label3.ForeColor = System.Drawing.Color.White;
-            this.Label3.Location = new System.Drawing.Point(124, 27);
-            this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(71, 19);
-            this.Label3.TabIndex = 41;
-            this.Label3.Text = "合  格";
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.Blue;
-            this.button2.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(92, 69);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(295, 37);
-            this.button2.TabIndex = 42;
-            this.button2.Text = "0";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.Blue;
-            this.button3.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(92, 113);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(295, 37);
-            this.button3.TabIndex = 43;
-            this.button3.Text = "0";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Blue;
-            this.label2.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(124, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 19);
-            this.label2.TabIndex = 44;
-            this.label2.Text = "不合格";
-            // 
-            // Label5
-            // 
-            this.Label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.Label5.AutoSize = true;
-            this.Label5.BackColor = System.Drawing.Color.Blue;
-            this.Label5.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label5.ForeColor = System.Drawing.Color.White;
-            this.Label5.Location = new System.Drawing.Point(124, 121);
-            this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(71, 19);
-            this.Label5.TabIndex = 45;
-            this.Label5.Text = "总  数";
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Blue;
-            this.label6.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(287, 75);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 19);
-            this.label6.TabIndex = 46;
-            this.label6.Text = "pic";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Blue;
-            this.label7.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(287, 120);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 19);
-            this.label7.TabIndex = 47;
-            this.label7.Text = "pic";
-            // 
-            // Column1
-            // 
-            dataGridViewCellStyle91.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle91;
-            this.Column1.FillWeight = 69.32018F;
-            this.Column1.HeaderText = "编号";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 56;
-            // 
-            // Column15
-            // 
-            dataGridViewCellStyle92.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column15.DefaultCellStyle = dataGridViewCellStyle92;
-            this.Column15.FillWeight = 69.32018F;
-            this.Column15.HeaderText = "工件条码";
-            this.Column15.Name = "Column15";
-            this.Column15.ReadOnly = true;
-            this.Column15.Width = 56;
-            // 
-            // Column4
-            // 
-            dataGridViewCellStyle93.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle93;
-            this.Column4.FillWeight = 69.32018F;
-            this.Column4.HeaderText = "结果";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 56;
-            // 
-            // Column3
-            // 
-            dataGridViewCellStyle94.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle94;
-            this.Column3.FillWeight = 69.32018F;
-            this.Column3.HeaderText = "循环次数";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 57;
-            // 
-            // Column2
-            // 
-            dataGridViewCellStyle95.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle95;
-            this.Column2.FillWeight = 69.32018F;
-            this.Column2.HeaderText = "时间";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 56;
-            // 
-            // Column5
-            // 
-            dataGridViewCellStyle96.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle96;
-            this.Column5.FillWeight = 69.32018F;
-            this.Column5.HeaderText = "日期";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 56;
-            // 
-            // Column6
-            // 
-            dataGridViewCellStyle97.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle97;
-            this.Column6.FillWeight = 69.32018F;
-            this.Column6.HeaderText = "焊接时间(s)";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 95;
-            // 
-            // Column7
-            // 
-            dataGridViewCellStyle98.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle98;
-            this.Column7.FillWeight = 69.32018F;
-            this.Column7.HeaderText = "绝对深度总值(mm)";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Width = 135;
-            // 
-            // Column8
-            // 
-            dataGridViewCellStyle99.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle99;
-            this.Column8.FillWeight = 69.32018F;
-            this.Column8.HeaderText = "焊接相对深度(mm)";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 135;
-            // 
-            // Column9
-            // 
-            dataGridViewCellStyle100.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column9.DefaultCellStyle = dataGridViewCellStyle100;
-            this.Column9.FillWeight = 69.32018F;
-            this.Column9.HeaderText = "相对深度总值(mm)";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Width = 135;
-            // 
-            // Column10
-            // 
-            dataGridViewCellStyle101.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column10.DefaultCellStyle = dataGridViewCellStyle101;
-            this.Column10.FillWeight = 69.32018F;
-            this.Column10.HeaderText = "触发压力(N)";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Width = 95;
-            // 
-            // Column11
-            // 
-            dataGridViewCellStyle102.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column11.DefaultCellStyle = dataGridViewCellStyle102;
-            this.Column11.FillWeight = 69.32018F;
-            this.Column11.HeaderText = "焊接压力(N)";
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            // 
-            // Column12
-            // 
-            dataGridViewCellStyle103.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column12.DefaultCellStyle = dataGridViewCellStyle103;
-            this.Column12.FillWeight = 532.9949F;
-            this.Column12.HeaderText = "<future>";
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
-            this.Column12.Width = 50;
-            // 
-            // Column13
-            // 
-            dataGridViewCellStyle104.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column13.DefaultCellStyle = dataGridViewCellStyle104;
-            this.Column13.FillWeight = 65.8427F;
-            this.Column13.HeaderText = "<future>";
-            this.Column13.Name = "Column13";
-            this.Column13.ReadOnly = true;
-            this.Column13.Width = 53;
-            // 
-            // Column14
-            // 
-            dataGridViewCellStyle105.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column14.DefaultCellStyle = dataGridViewCellStyle105;
-            this.Column14.FillWeight = 69.32018F;
-            this.Column14.HeaderText = "速度(mm/s)";
-            this.Column14.Name = "Column14";
-            this.Column14.ReadOnly = true;
-            this.Column14.Width = 80;
+            this.Label1.AutoSize = true;
+            this.Label1.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Label1.ForeColor = System.Drawing.Color.Black;
+            this.Label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Label1.Location = new System.Drawing.Point(24, 37);
+            this.Label1.Name = "Label1";
+            this.Label1.Size = new System.Drawing.Size(109, 20);
+            this.Label1.TabIndex = 0;
+            this.Label1.Text = "产品型号：";
             // 
             // Main_Form
             // 
@@ -728,10 +728,10 @@
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
             this.groupBox4.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

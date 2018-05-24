@@ -479,6 +479,7 @@ namespace C18210
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+             Class1_Tool .function_CreateDirectory();
             ToolStripStatusLabel4.Text = DateTime.Now.ToLocalTime().ToString();
             if (SQL.Class_ID.login_Is_OK)
             {

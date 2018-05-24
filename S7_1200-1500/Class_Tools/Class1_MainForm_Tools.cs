@@ -124,6 +124,50 @@ namespace C18210.Class_Tools
             return temp;
 
         }
+        /// <summary>
+        /// 按日期建立当天数据存放用的文件夹
+        /// </summary>
+        public void function_CreateDirectory()
+        {
+            string  sPath = Global.path_exe + "\\recorddata\\"; 
+            string yy;
+            string mm;
+            string dd;
 
+            yy = DateTime.Now.Year.ToString() + "年";
+            mm = DateTime.Now.Month.ToString() + "月";
+            dd = DateTime.Now.Day.ToString() + "日";
+            if (!System.IO.Directory.Exists(sPath+"\\"+yy))
+            {
+                System.IO.Directory.CreateDirectory(sPath + "\\" + yy);//不存在就创建文件夹 } 
+            }
+            if (!System.IO.Directory.Exists(sPath + "\\" + yy+"\\" + mm))
+            {
+                System.IO.Directory.CreateDirectory(sPath + "\\" + yy + "\\" + mm);//不存在就创建文件夹 } 
+            }
+            if (!System.IO.Directory.Exists(sPath + "\\" + yy + "\\" + mm + "\\" + dd))
+            {
+                System.IO.Directory.CreateDirectory(sPath + "\\" + yy + "\\" + mm + "\\" + dd);//不存在就创建文件夹 } 
+            }
+           
+        }
+        public void function_CreateFile()
+        {
+            string sPath = Global.path_exe + "\\recorddata\\";
+            string yy;
+            string mm;
+            string dd;
+
+            yy = DateTime.Now.Year.ToString() + "年";
+            mm = DateTime.Now.Month.ToString() + "月";
+            dd = DateTime.Now.Day.ToString() + "日";
+            
+            if (System.IO.Directory.Exists(sPath + "\\" + yy + "\\" + mm + "\\" + dd))
+            {
+                string str_path = sPath + "\\" + yy + "\\" + mm + "\\" + dd;
+
+            }
+
+        }
     }
 }

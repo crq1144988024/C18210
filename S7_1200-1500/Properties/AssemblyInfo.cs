@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("S7_1200-1500")]
+[assembly: AssemblyTitle("C18210")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("优启时代")]
-[assembly: AssemblyProduct("S7_1200-1500")]
-[assembly: AssemblyCopyright("Copyright © 优启时代 2017")]
+[assembly: AssemblyCompany("RCC")]
+[assembly: AssemblyProduct("LASER WELDING data")]
+[assembly: AssemblyCopyright("Copyright © rcc 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
