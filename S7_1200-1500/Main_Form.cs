@@ -292,11 +292,11 @@ namespace C18210
         {
             ToolStripStatusLabel9.Text = str;
            
-           Class1_Tool.function_datagridview_refresh(DataGridView1, datagridview_add_enable);
+          
             Class1_Tool.function_database_add(datagridview_add_enable);
           
-
-
+            Class1_Tool.function_datagridview_refresh(DataGridView1, datagridview_add_enable);
+          
 
 
         }
@@ -393,7 +393,7 @@ namespace C18210
             Condition_monitoring form = new Condition_monitoring();
             form.Show();
         }
-
+      
         bool INT_11_OVER = false;
         public static string str_product_bar_code_TEMP;
         /// <summary>
@@ -410,20 +410,17 @@ namespace C18210
           str_product_bar_code_string = "";
             str_list_part_ASCII.Clear();
             str_list_part_Char = "";
-            str_all = "";
+         
             str_all = str;
             comma_str = "";
             comma_int = 0;
             str_product_bar_code_TEMP = "";
             int i = 0;
             INT_11_OVER = false;
-            str_all = str.Length.ToString() + " =====" + (str.Length / 2).ToString();
+            // str_all = str.Length.ToString() + " =====" + (str.Length / 2).ToString();
 
-            //输入多少输出就多少
-            int_all_Byte_I[87] = Convert.ToUInt16(str.Substring(88, 4), 16);//OK count
-            int_all_Byte_I[88] = Convert.ToUInt16(str.Substring(92, 4), 16);//NG count
-            int_all_Byte_I[89] = Convert.ToUInt16(str.Substring(96, 4), 16);//Total count
-
+         //   str_all = "";
+          
             for (int k = 0; k < str.Length / 2; k++)
             {
                 if (k >= 0 && k <= 87)
@@ -442,8 +439,25 @@ namespace C18210
                 }
                 if (k >= 88 && k <= 99)
                 {
+                    //输入多少输出就多少
+                    if (k == 88)
+                    {
+                       
+                        int_all_Byte_I[k] = Convert.ToUInt16(str.Substring(i, 8), 16);//OK count
+                      //  str_all = str_all+ "w  ";
+                      
+                    }
+                    if (k == 92)
+                    {
+                        int_all_Byte_I[k] = Convert.ToUInt16(str.Substring(i, 8), 16);//NG count
+                    }
+                    if (k == 96)
+                    {
+                        int_all_Byte_I[k] = Convert.ToUInt16(str.Substring(i, 8), 16);//Total count
+                    }
+                       
+                 //   str_all = Convert.ToString(Convert.ToUInt16(str.Substring(88, 4), 16));
 
-                   
                 }
                 if (k >=100&& k <= 293)
                 {
@@ -479,7 +493,7 @@ namespace C18210
                 }
 
 
-                if (k >= 903 && k <= 951)
+                if (k >= 902 && k <= 951)
                 {
                     //char 类型
                     int value = Convert.ToInt32(str.Substring(i, 2), 16);
@@ -530,11 +544,14 @@ namespace C18210
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            Button_OK.Text= int_all_Byte_I[87].ToString() ;//OK count
-            Button_NG.Text= int_all_Byte_I[88].ToString();//NG count
-            Button_Total.Text= int_all_Byte_I[89].ToString();//Total count
+            Button_OK.Text= int_all_Byte_I[88].ToString() ;//OK count
+            Button_NG.Text= int_all_Byte_I[92].ToString();//NG count
+            Button_Total.Text= int_all_Byte_I[96].ToString();//Total count
 
             Button_Result.Text = str_product_result;
+            if (str_product_result.Contains("OK")) { Button_Result.BackColor = Color.Green; }
+           else if (str_product_result.Contains("NG")) { Button_Result.BackColor = Color.Red; }
+            else { Button_Result.BackColor = Color.Yellow; }
             TextBox_product_name.Text = str_productname_string;
             TextBox_product_code.Text = str_product_bar_code_string;
 

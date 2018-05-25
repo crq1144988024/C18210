@@ -35,7 +35,15 @@ namespace C18210
             FileInfo file = new FileInfo(sourceFile);
             if (file.Exists)
             {
+                try
+                {
+
                 file.CopyTo(destinationFile, true);
+                }
+                catch
+                {
+                    return;
+                }
             }
 
 
@@ -55,8 +63,12 @@ namespace C18210
                     //     FillWorksheetAbAssets(package.Workbook.Worksheets[worksheet_now + 1], datagridview1, check_num);
                     FillWorksheetAbAssets(package.Workbook.Worksheets["Sheet0"], datagridview1, check_num);
                     //package.Workbook.Worksheets.Delete("Sheet0");
-                    package.Save();
+                    try
+                    {
 
+                        package.Save();
+                    }
+                    catch { return; }
                   //  MessageBox.Show("导出成功！");
                 }
             }

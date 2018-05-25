@@ -68,6 +68,22 @@
             this.ToolStripStatusLabel11 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.DataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Label8 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -86,22 +102,6 @@
             this.TextBox_product_name = new System.Windows.Forms.TextBox();
             this.Label17 = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ToolStrip1.SuspendLayout();
             this.StatusStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -328,6 +328,163 @@
             this.DataGridView1.Size = new System.Drawing.Size(1258, 697);
             this.DataGridView1.TabIndex = 24;
             // 
+            // Column1
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Column1.FillWeight = 69.32018F;
+            this.Column1.HeaderText = "编号";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 56;
+            // 
+            // Column16
+            // 
+            this.Column16.HeaderText = "产品型号";
+            this.Column16.Name = "Column16";
+            this.Column16.ReadOnly = true;
+            this.Column16.Width = 60;
+            // 
+            // Column15
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column15.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column15.FillWeight = 69.32018F;
+            this.Column15.HeaderText = "工件条码";
+            this.Column15.Name = "Column15";
+            this.Column15.ReadOnly = true;
+            this.Column15.Width = 56;
+            // 
+            // Column4
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column4.FillWeight = 69.32018F;
+            this.Column4.HeaderText = "结果";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 56;
+            // 
+            // Column3
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column3.FillWeight = 69.32018F;
+            this.Column3.HeaderText = "循环次数";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 57;
+            // 
+            // Column2
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Column2.FillWeight = 69.32018F;
+            this.Column2.HeaderText = "时间";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 56;
+            // 
+            // Column5
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Column5.FillWeight = 69.32018F;
+            this.Column5.HeaderText = "日期";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 56;
+            // 
+            // Column6
+            // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Column6.FillWeight = 69.32018F;
+            this.Column6.HeaderText = "焊接时间(s)";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 95;
+            // 
+            // Column7
+            // 
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle8;
+            this.Column7.FillWeight = 69.32018F;
+            this.Column7.HeaderText = "绝对深度总值(mm)";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 120;
+            // 
+            // Column8
+            // 
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle9;
+            this.Column8.FillWeight = 69.32018F;
+            this.Column8.HeaderText = "焊接相对深度(mm)";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 120;
+            // 
+            // Column9
+            // 
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column9.DefaultCellStyle = dataGridViewCellStyle10;
+            this.Column9.FillWeight = 69.32018F;
+            this.Column9.HeaderText = "相对深度总值(mm)";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Width = 120;
+            // 
+            // Column10
+            // 
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column10.DefaultCellStyle = dataGridViewCellStyle11;
+            this.Column10.FillWeight = 69.32018F;
+            this.Column10.HeaderText = "触发压力(N)";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Width = 95;
+            // 
+            // Column11
+            // 
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column11.DefaultCellStyle = dataGridViewCellStyle12;
+            this.Column11.FillWeight = 69.32018F;
+            this.Column11.HeaderText = "焊接压力(N)";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            this.Column11.Width = 80;
+            // 
+            // Column12
+            // 
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column12.DefaultCellStyle = dataGridViewCellStyle13;
+            this.Column12.FillWeight = 532.9949F;
+            this.Column12.HeaderText = "<future>";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            this.Column12.Width = 50;
+            // 
+            // Column13
+            // 
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column13.DefaultCellStyle = dataGridViewCellStyle14;
+            this.Column13.FillWeight = 65.8427F;
+            this.Column13.HeaderText = "<future>";
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            this.Column13.Width = 50;
+            // 
+            // Column14
+            // 
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column14.DefaultCellStyle = dataGridViewCellStyle15;
+            this.Column14.FillWeight = 69.32018F;
+            this.Column14.HeaderText = "速度(mm/s)";
+            this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
+            this.Column14.Width = 80;
+            // 
             // timer1
             // 
             this.timer1.Enabled = true;
@@ -514,7 +671,7 @@
             this.groupBox5.Size = new System.Drawing.Size(643, 176);
             this.groupBox5.TabIndex = 42;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "产品信息";
+            this.groupBox5.Text = "当前产品信息";
             this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // TextBox_product_code
@@ -558,163 +715,6 @@
             this.Label1.Size = new System.Drawing.Size(109, 20);
             this.Label1.TabIndex = 0;
             this.Label1.Text = "产品型号：";
-            // 
-            // Column1
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column1.FillWeight = 69.32018F;
-            this.Column1.HeaderText = "编号";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 56;
-            // 
-            // Column16
-            // 
-            this.Column16.HeaderText = "产品型号";
-            this.Column16.Name = "Column16";
-            this.Column16.ReadOnly = true;
-            this.Column16.Width = 60;
-            // 
-            // Column15
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column15.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column15.FillWeight = 69.32018F;
-            this.Column15.HeaderText = "工件条码";
-            this.Column15.Name = "Column15";
-            this.Column15.ReadOnly = true;
-            this.Column15.Width = 56;
-            // 
-            // Column4
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column4.FillWeight = 69.32018F;
-            this.Column4.HeaderText = "结果";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 56;
-            // 
-            // Column3
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column3.FillWeight = 69.32018F;
-            this.Column3.HeaderText = "循环次数";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 57;
-            // 
-            // Column2
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Column2.FillWeight = 69.32018F;
-            this.Column2.HeaderText = "时间";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 56;
-            // 
-            // Column5
-            // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle6;
-            this.Column5.FillWeight = 69.32018F;
-            this.Column5.HeaderText = "日期";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 56;
-            // 
-            // Column6
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle7;
-            this.Column6.FillWeight = 69.32018F;
-            this.Column6.HeaderText = "焊接时间(s)";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 95;
-            // 
-            // Column7
-            // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Column7.FillWeight = 69.32018F;
-            this.Column7.HeaderText = "绝对深度总值(mm)";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Width = 120;
-            // 
-            // Column8
-            // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle9;
-            this.Column8.FillWeight = 69.32018F;
-            this.Column8.HeaderText = "焊接相对深度(mm)";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 120;
-            // 
-            // Column9
-            // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column9.DefaultCellStyle = dataGridViewCellStyle10;
-            this.Column9.FillWeight = 69.32018F;
-            this.Column9.HeaderText = "相对深度总值(mm)";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Width = 120;
-            // 
-            // Column10
-            // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column10.DefaultCellStyle = dataGridViewCellStyle11;
-            this.Column10.FillWeight = 69.32018F;
-            this.Column10.HeaderText = "触发压力(N)";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Width = 95;
-            // 
-            // Column11
-            // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column11.DefaultCellStyle = dataGridViewCellStyle12;
-            this.Column11.FillWeight = 69.32018F;
-            this.Column11.HeaderText = "焊接压力(N)";
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            this.Column11.Width = 80;
-            // 
-            // Column12
-            // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column12.DefaultCellStyle = dataGridViewCellStyle13;
-            this.Column12.FillWeight = 532.9949F;
-            this.Column12.HeaderText = "<future>";
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
-            this.Column12.Width = 50;
-            // 
-            // Column13
-            // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column13.DefaultCellStyle = dataGridViewCellStyle14;
-            this.Column13.FillWeight = 65.8427F;
-            this.Column13.HeaderText = "<future>";
-            this.Column13.Name = "Column13";
-            this.Column13.ReadOnly = true;
-            this.Column13.Width = 50;
-            // 
-            // Column14
-            // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column14.DefaultCellStyle = dataGridViewCellStyle15;
-            this.Column14.FillWeight = 69.32018F;
-            this.Column14.HeaderText = "速度(mm/s)";
-            this.Column14.Name = "Column14";
-            this.Column14.ReadOnly = true;
-            this.Column14.Width = 80;
             // 
             // Main_Form
             // 

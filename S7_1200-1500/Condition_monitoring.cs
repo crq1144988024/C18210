@@ -27,6 +27,7 @@ namespace C18210
             textBox2.Text = Main_Form.str_productname_string;
             textBox3.Text = Main_Form.str_all_ASCII;
             textBox4.Text = Main_Form.str_all_Char;
+            textBox5.Text = Main_Form.str_all;
             dataGridView1_plc_pc.Rows.Clear();
             int row_i = 0;
             foreach(string str in Main_Form.str_list_part_ASCII)

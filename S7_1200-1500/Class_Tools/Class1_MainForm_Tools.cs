@@ -12,16 +12,20 @@ namespace C18210.Class_Tools
     {
         DataClasses2_laser_dataDataContext Class_laser_data = new DataClasses2_laser_dataDataContext();
         Class3_Excel_output Excel_output = new Class3_Excel_output();
-        public  bool function_initialize()
-        {
-            bool temp = false;
-           
-            return temp;
-        }
         public static bool rising_edge_emory0;
         public static bool rising_edge_emory1;
         public static bool rising_edge_emory2;
         public static bool rising_edge_emory3;
+        public  bool function_initialize()
+        {
+            bool temp = false;
+            rising_edge_emory0 = false;
+            rising_edge_emory1 = false;
+            rising_edge_emory2 = false;
+            rising_edge_emory3 = false;
+            return temp;
+        }
+        
         public bool function_datagridview_add(DataGridView datagridview1,bool enable)
         {
 
@@ -60,6 +64,7 @@ namespace C18210.Class_Tools
             return temp;
 
         }
+        public static int ScrollingRowIndex_i;
         public static List<string[]> list0_find_all = new List<string[]>();
         public bool function_datagridview_refresh(DataGridView datagridview1, bool enable)
         {
@@ -67,6 +72,7 @@ namespace C18210.Class_Tools
             bool temp = false;
             if (enable && enable != rising_edge_emory1)
             {
+               
                 list0_find_all.Clear();
                 var q_abc_text = from t in Class_laser_data.Table_data_laser
 
@@ -87,7 +93,14 @@ namespace C18210.Class_Tools
                     dtFormat.ShortDatePattern = "yyyy/MM/dd";
                     try
                     {
-                        dt = Convert.ToDateTime(strs[6], dtFormat);
+                        if (strs[6] != null)
+                        {
+                            if (strs[6].Count() > 0)
+                            {
+
+                                dt = Convert.ToDateTime(strs[6], dtFormat);
+                            }
+                        }
                     }
                     catch
                     {
@@ -139,6 +152,18 @@ namespace C18210.Class_Tools
 
                     }
                 }
+
+                ScrollingRowIndex_i = datagridview1.Rows.Count-1;// datagridview1.FirstDisplayedScrollingRowIndex;
+
+                try
+                {
+
+                    datagridview1.FirstDisplayedScrollingRowIndex = ScrollingRowIndex_i ;//定位
+                }
+                catch { }
+
+            
+
             }
             Main_Form. numerical_order++;
             rising_edge_emory1 = enable;
