@@ -676,6 +676,7 @@
             // 
             // TextBox_product_code
             // 
+            this.TextBox_product_code.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
             this.TextBox_product_code.Location = new System.Drawing.Point(118, 103);
             this.TextBox_product_code.Multiline = true;
             this.TextBox_product_code.Name = "TextBox_product_code";
@@ -685,6 +686,7 @@
             // 
             // TextBox_product_name
             // 
+            this.TextBox_product_name.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.TextBox_product_name.Location = new System.Drawing.Point(118, 26);
             this.TextBox_product_name.Multiline = true;
             this.TextBox_product_name.Name = "TextBox_product_name";

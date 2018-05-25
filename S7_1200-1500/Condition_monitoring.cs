@@ -46,5 +46,23 @@ namespace C18210
         {
 
         }
+       /// <summary>
+       /// 修改IP确定
+       /// </summary>
+       /// <param name="sender"></param>
+       /// <param name="e"></param>
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+            Main_Form.IP_TEXT = textBox_IP.Text.ToString().Trim();
+                MessageBox.Show("修改成功！");
+            }
+            catch
+            {
+                MessageBox.Show("修改失败，请检查IP是否准确！");
+            }
+        }
     }
 }

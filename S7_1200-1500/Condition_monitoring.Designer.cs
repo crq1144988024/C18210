@@ -50,6 +50,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox_IP = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_plc_pc)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -207,21 +210,51 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(219, 887);
+            this.textBox5.Location = new System.Drawing.Point(219, 875);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(798, 21);
             this.textBox5.TabIndex = 7;
+            // 
+            // textBox_IP
+            // 
+            this.textBox_IP.Location = new System.Drawing.Point(219, 906);
+            this.textBox_IP.Name = "textBox_IP";
+            this.textBox_IP.Size = new System.Drawing.Size(218, 21);
+            this.textBox_IP.TabIndex = 7;
+            this.textBox_IP.Text = "192.168.20.70";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(169, 909);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "IP设置";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(454, 904);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "修改";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Condition_monitoring
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1068, 939);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox_IP);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -264,5 +297,8 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox_IP;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

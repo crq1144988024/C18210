@@ -55,7 +55,7 @@ namespace C18210
         bool t0_s1;
         byte[] buffer_write_temp12 = new byte[100];
 
-        String IP_TEXT = "192.168.20.70";
+       public static String IP_TEXT = "192.168.20.70";
 
 
         public static string str_all_ASCII = "";
