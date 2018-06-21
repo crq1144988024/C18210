@@ -2,10 +2,10 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses2_laser_data">
   <DataContextMoniker Name="/DataClasses2_laser_dataDataContext" />
   <nestedChildShapes>
-    <classShape Id="e37dc9ec-b04b-494b-9ccd-ce5fea3ff035" absoluteBounds="3.25, 1.875, 2, 3.8637821451822916">
+    <classShape Id="3e0ce7d7-8ac1-4350-8def-956317ef58aa" absoluteBounds="3.375, 2, 2, 3.8637821451822916">
       <DataClassMoniker Name="/DataClasses2_laser_dataDataContext/Table_data_laser" />
       <nestedChildShapes>
-        <elementListCompartment Id="a17d0c1c-286c-46b3-8e55-f0ee43a041ee" absoluteBounds="3.265, 2.335, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="cb475f73-9f73-4837-852a-5e7b488a366d" absoluteBounds="3.39, 2.46, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

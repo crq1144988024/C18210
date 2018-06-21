@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="C18210" Class="DataClasses2_laser_dataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=CRQ-PC\WINCC;Initial Catalog=C18210;Integrated Security=True" SettingsObjectName="C18210.Properties.Settings" SettingsPropertyName="C18210ConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=HP-PC;Initial Catalog=C18210;Integrated Security=True" SettingsObjectName="C18210.Properties.Settings" SettingsPropertyName="C18210ConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Table_data_laser" Member="Table_data_laser">
     <Type Name="Table_data_laser">
       <Column Name="编号" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

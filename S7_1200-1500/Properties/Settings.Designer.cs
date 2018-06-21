@@ -26,7 +26,7 @@ namespace C18210.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=CRQ-PC\\WINCC;Initial Catalog=C18210;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=HP-PC;Initial Catalog=C18210;Integrated Security=True")]
         public string C18210ConnectionString {
             get {
                 return ((string)(this["C18210ConnectionString"]));

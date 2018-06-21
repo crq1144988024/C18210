@@ -60,12 +60,8 @@
             this.ToolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel12 = new System.Windows.Forms.ToolStripStatusLabel();
             this.ToolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.ToolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.ToolStripStatusLabel7 = new System.Windows.Forms.ToolStripStatusLabel();
             this.ToolStripStatusLabel8 = new System.Windows.Forms.ToolStripStatusLabel();
             this.ToolStripStatusLabel9 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.ToolStripStatusLabel10 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.ToolStripStatusLabel11 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.DataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -199,12 +195,8 @@
             this.ToolStripStatusLabel4,
             this.toolStripStatusLabel12,
             this.ToolStripStatusLabel5,
-            this.ToolStripStatusLabel6,
-            this.ToolStripStatusLabel7,
             this.ToolStripStatusLabel8,
-            this.ToolStripStatusLabel9,
-            this.ToolStripStatusLabel10,
-            this.ToolStripStatusLabel11});
+            this.ToolStripStatusLabel9});
             this.StatusStrip1.Location = new System.Drawing.Point(0, 966);
             this.StatusStrip1.Name = "StatusStrip1";
             this.StatusStrip1.Size = new System.Drawing.Size(1264, 22);
@@ -250,18 +242,6 @@
             this.ToolStripStatusLabel5.Size = new System.Drawing.Size(56, 17);
             this.ToolStripStatusLabel5.Text = "连接失败";
             // 
-            // ToolStripStatusLabel6
-            // 
-            this.ToolStripStatusLabel6.Name = "ToolStripStatusLabel6";
-            this.ToolStripStatusLabel6.Size = new System.Drawing.Size(71, 17);
-            this.ToolStripStatusLabel6.Text = "|自动状态：";
-            // 
-            // ToolStripStatusLabel7
-            // 
-            this.ToolStripStatusLabel7.Name = "ToolStripStatusLabel7";
-            this.ToolStripStatusLabel7.Size = new System.Drawing.Size(15, 17);
-            this.ToolStripStatusLabel7.Text = "0";
-            // 
             // ToolStripStatusLabel8
             // 
             this.ToolStripStatusLabel8.Name = "ToolStripStatusLabel8";
@@ -273,18 +253,6 @@
             this.ToolStripStatusLabel9.Name = "ToolStripStatusLabel9";
             this.ToolStripStatusLabel9.Size = new System.Drawing.Size(15, 17);
             this.ToolStripStatusLabel9.Text = "0";
-            // 
-            // ToolStripStatusLabel10
-            // 
-            this.ToolStripStatusLabel10.Name = "ToolStripStatusLabel10";
-            this.ToolStripStatusLabel10.Size = new System.Drawing.Size(71, 17);
-            this.ToolStripStatusLabel10.Text = "|系统状态：";
-            // 
-            // ToolStripStatusLabel11
-            // 
-            this.ToolStripStatusLabel11.Name = "ToolStripStatusLabel11";
-            this.ToolStripStatusLabel11.Size = new System.Drawing.Size(15, 17);
-            this.ToolStripStatusLabel11.Text = "0";
             // 
             // groupBox2
             // 
@@ -502,7 +470,7 @@
             this.Label8.Name = "Label8";
             this.Label8.Size = new System.Drawing.Size(42, 19);
             this.Label8.TabIndex = 40;
-            this.Label8.Text = "pic";
+            this.Label8.Text = "pcs";
             // 
             // groupBox4
             // 
@@ -533,7 +501,7 @@
             this.groupBox6.Size = new System.Drawing.Size(597, 176);
             this.groupBox6.TabIndex = 43;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "当前产品状态";
+            this.groupBox6.Text = "产品状态";
             // 
             // label7
             // 
@@ -547,7 +515,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 19);
             this.label7.TabIndex = 47;
-            this.label7.Text = "pic";
+            this.label7.Text = "pcs";
             // 
             // label6
             // 
@@ -561,7 +529,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(42, 19);
             this.label6.TabIndex = 46;
-            this.label6.Text = "pic";
+            this.label6.Text = "pcs";
             // 
             // Label5
             // 
@@ -728,6 +696,7 @@
             this.Controls.Add(this.StatusStrip1);
             this.Controls.Add(this.ToolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "激光焊接数据记录";
@@ -758,12 +727,8 @@
         internal System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel3;
         internal System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel4;
         internal System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel5;
-        internal System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel6;
-        internal System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel7;
         internal System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel8;
         internal System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel9;
-        internal System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel10;
-        internal System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel11;
         private System.Windows.Forms.GroupBox groupBox2;
         internal System.Windows.Forms.DataGridView DataGridView1;
         public System.Windows.Forms.ToolStrip ToolStrip1;

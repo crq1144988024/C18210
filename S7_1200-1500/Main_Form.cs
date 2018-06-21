@@ -55,7 +55,7 @@ namespace C18210
         bool t0_s1;
         byte[] buffer_write_temp12 = new byte[100];
 
-       public static String IP_TEXT = "192.168.20.70";
+       public static String IP_TEXT = "192.168.1.30";
 
 
         public static string str_all_ASCII = "";
@@ -79,12 +79,15 @@ namespace C18210
 
         public Main_Form()
         {
+           
             InitializeComponent();
         }
 
         private void Main_Form_Load(object sender, EventArgs e)
         {
-           
+
+            SystemInitialization initial = new SystemInitialization();
+            initial.ShowDialog();
             Class1_Tool.function_initialize();
             function_initialize();
                t0_s1 = false;
@@ -323,7 +326,7 @@ namespace C18210
             }
             else
             {
-                MessageBox.Show("1200读取失败");
+               // MessageBox.Show("1200读取失败");
             }
 
         }
@@ -359,7 +362,7 @@ namespace C18210
           
             if (Result != 0)         //结果为0，则表示执行结果ok
             {
-                MessageBox.Show("1200写入失败");
+               // MessageBox.Show("1200写入失败");
             }
           
         }
@@ -541,16 +544,38 @@ namespace C18210
             //DBW16_12.Text = Convert.ToString(Convert.ToUInt16(str.Substring(32, 4), 16));
             //DBW18_12.Text = Convert.ToString(Convert.ToUInt16(str.Substring(36, 4), 16));
         }
-
+        int heart_int = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
+
+            switch (heart_int)
+            {
+                case 0:
+                    heart_int = 1;
+                    break;
+                case 1:
+                    heart_int = 2;
+                    break;
+                case 2:
+                    heart_int = 1;
+                    break;
+                default:
+                    break;
+            }
+
+            int_all_Byte_Q[0] = heart_int;//PC-PLC  heart
+
             Button_OK.Text= int_all_Byte_I[88].ToString() ;//OK count
             Button_NG.Text= int_all_Byte_I[92].ToString();//NG count
             Button_Total.Text= int_all_Byte_I[96].ToString();//Total count
 
             Button_Result.Text = str_product_result;
-            if (str_product_result.Contains("OK")) { Button_Result.BackColor = Color.Green; }
-           else if (str_product_result.Contains("NG")) { Button_Result.BackColor = Color.Red; }
+            if (str_product_result != null)
+            {
+                if (str_product_result.Contains("OK")) { Button_Result.BackColor = Color.Green; }
+                else if (str_product_result.Contains("NG")) { Button_Result.BackColor = Color.Red; }
+                else { Button_Result.BackColor = Color.Yellow; }
+            }
             else { Button_Result.BackColor = Color.Yellow; }
             TextBox_product_name.Text = str_productname_string;
             TextBox_product_code.Text = str_product_bar_code_string;

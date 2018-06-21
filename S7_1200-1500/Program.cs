@@ -15,7 +15,8 @@ namespace C18210
         {
             //Application.EnableVisualStyles();
             // Application.SetCompatibleTextRenderingDefault(false);
-          //  Application.Run(new find_datas());
+            // Application.Run(new Form1());
+            // Application.Run(new SystemInitialization());
             Application.Run(new Main_Form());
         }
     }

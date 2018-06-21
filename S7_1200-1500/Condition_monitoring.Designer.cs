@@ -221,7 +221,7 @@
             this.textBox_IP.Name = "textBox_IP";
             this.textBox_IP.Size = new System.Drawing.Size(218, 21);
             this.textBox_IP.TabIndex = 7;
-            this.textBox_IP.Text = "192.168.20.70";
+            this.textBox_IP.Text = "192.168.1.30";
             // 
             // label1
             // 

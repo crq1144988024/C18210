@@ -64,6 +64,7 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.recstr12 = new System.Windows.Forms.TextBox();
@@ -98,7 +99,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -304,7 +304,7 @@
             this.IP_1500.Name = "IP_1500";
             this.IP_1500.Size = new System.Drawing.Size(100, 21);
             this.IP_1500.TabIndex = 59;
-            this.IP_1500.Text = "192.168.20.100";
+            this.IP_1500.Text = "192.168.1.20";
             // 
             // label28
             // 
@@ -479,6 +479,13 @@
             this.groupBox3.TabIndex = 70;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "S7-1200";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(50, 363);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 21);
+            this.textBox3.TabIndex = 114;
             // 
             // textBox2
             // 
@@ -712,7 +719,7 @@
             this.IP_1200.Name = "IP_1200";
             this.IP_1200.Size = new System.Drawing.Size(100, 21);
             this.IP_1200.TabIndex = 22;
-            this.IP_1200.Text = "192.168.20.70";
+            this.IP_1200.Text = "192.168.1.20";
             // 
             // label19
             // 
@@ -773,13 +780,6 @@
             this.label1.Size = new System.Drawing.Size(197, 35);
             this.label1.TabIndex = 76;
             this.label1.Text = "S7协议监控";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(50, 363);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 21);
-            this.textBox3.TabIndex = 114;
             // 
             // Form1
             // 

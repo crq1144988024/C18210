@@ -9,7 +9,7 @@ namespace C18210
 {
   public  class Global
     {
-        public static string path_exe = Directory.GetCurrentDirectory();
+        public static string path_exe = "F:";//Directory.GetCurrentDirectory();
 
         public string checked_value(object str,string name)
         {
